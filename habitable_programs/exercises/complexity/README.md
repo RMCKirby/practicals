@@ -134,7 +134,7 @@ For a much more useful test of your implementation (!) try the `adamantium` samp
 
 ## 2. Applying the size tool
 
-Now that you have a working version of the `complexity` tool, your task is to improve the code of a [series of web scraping scripts](../../data/scraper) that I have written. First of all, apply the `complexity` tool to find methods with the highest ABC scores: `vado size MODE scraper`.
+Now that you have a working version of the `complexity` tool, your task is to improve the code of a [series of web scraping scripts](../../data/scraper) that I have written. First of all, apply the `complexity` tool to find methods with the highest ABC scores: `vado complexity abc scraper`.
 
 Which methods have the highest ABC score? How about for the individual A, B and C components? Which high scores do you think are most indicative of a complexity problem?
 
@@ -147,4 +147,4 @@ Now that you have found a complex method or two in my [series of web scraping sc
 
 Next, figure out what your chosen script is supposed to do, as there are no automated tests for these scripts (surprise!). For example, run your chosen script, such as: `vado scrape project_supervisor.rb` and then again with `vado scrape project_supervisor.rb` (notice that the output differs, thanks to the use of `sample`).
 
-Apply the refactorings described in the [getting simple lecture](http://dams.flippd.it/videos/14) to improve the code. In particular, can you identify loops or conditionals that can be removed? Can you use the template method or strategy patterns to simplify the code? Try a few different designs, and each time check that you have not broken the code by running the scripts. Compare your final version with a classmate: explain and justify your designs to each other.
+Apply the refactorings described in the [getting simple lecture](http://dams.flippd.it/videos/14) to improve the code. In particular, can you identify loops or conditionals that can be removed? Can you send messages to new types rather than use conditionals with repetitive predicates (i.e., replace conditionals with polymorphism)? Try a few different designs, and each time check that you have not broken the code by running the scripts. Compare your final version with a classmate: explain and justify your designs to each other.
